@@ -1,0 +1,6 @@
+{
+  "name": "Clientiq",
+  "description": "Sistemi di automazione digitale, CRM e integrazioni software per gestire in modo ordinato le richieste dei clienti.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
