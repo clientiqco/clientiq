@@ -129,7 +129,7 @@ export default function ContactForm() {
             </div>
           </div>
         ) : (
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form action="https://formspree.io/f/xwvzndev" method="POST" className="space-y-6">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {/* Nome */}
               <div className="space-y-2">
@@ -138,6 +138,7 @@ export default function ContactForm() {
                 </label>
                 <input
                   id="name-input"
+                  name="name"
                   type="text"
                   required
                   placeholder="Es. Marco Rossi"
@@ -154,6 +155,7 @@ export default function ContactForm() {
                 </label>
                 <input
                   id="company-input"
+                  name="company"
                   type="text"
                   placeholder="Es. Ristorante del Corso"
                   value={formData.company}
@@ -171,6 +173,7 @@ export default function ContactForm() {
                 </label>
                 <input
                   id="phone-input"
+                  name="phone"
                   type="tel"
                   required
                   placeholder="Es. 331 737 7528"
@@ -187,6 +190,7 @@ export default function ContactForm() {
                 </label>
                 <input
                   id="email-input"
+                  name="email"
                   type="email"
                   required
                   placeholder="name@email.com"
@@ -204,6 +208,7 @@ export default function ContactForm() {
               </label>
               <textarea
                 id="message-input"
+                name="message"
                 rows={4}
                 placeholder="Spiegaci brevemente che canali utilizzi oggi o qual è la tua esigenza principale..."
                 value={formData.message}
